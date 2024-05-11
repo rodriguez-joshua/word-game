@@ -1,0 +1,304 @@
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: "Poppins", sans-serif;
+				font-weight: 500;
+				-webkit-user-select: none;
+				/* Safari */
+				-ms-user-select: none;
+				/* IE 10 and IE 11 */
+				user-select: none;
+				/* Standard syntax */
+
+				-ms-overflow-style: none;
+				/* IE and Edge */
+				scrollbar-width: none;
+				/* Firefox */
+			}
+
+			:root {
+				--main-color: #5983FF;
+				--bg-color: #071013;
+				--neutral: #e6e9ff;
+			}
+
+			body {
+
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: center;
+				gap: 1.5rem;
+				padding: 2rem;
+				width: 100vw;
+				height: 100vh;
+				height: calc(var(--vh, 1vh) * 100);
+				overflow: hidden;
+			}
+
+			h1 {
+				font-weight: 800;
+				color: var(--main-color);
+				padding: 1rem;
+				font-size: 3rem;
+				border-radius: 6px;
+			}
+
+			#container {
+				height: 40%;
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				padding: 1rem;
+				gap: 4rem;
+			}
+
+			#sortable-list {
+				display: flex;
+				list-style-type: none;
+				border-radius: 6px;
+				width: 100%;
+				justify-content: center;
+				gap: .25rem;
+			}
+
+			li {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				cursor: grab;
+				width: 2.5rem;
+				height: 2.5rem;
+				background-color: var(--bg-color);
+				color: var(--main-color);
+				border: solid 1px var(--main-color);
+				border-radius: 6px;
+				font-size: 2rem;
+				padding: .5rem;
+			}
+
+			button {
+				border: none;
+				font-size: 1.5rem;
+				padding: .25rem .5rem;
+				width: 100%;
+				cursor: pointer;
+				background-color: var(--bg-color);
+				color: var(--main-color);
+				border: solid 1px var(--main-color);
+				font-weight: 600;
+				border-radius: 6px;
+			}
+
+			.highlight-bg {
+				background-color: var(--bg-color);
+				opacity: 1;
+				background: repeating-linear-gradient(-45deg, var(--main-color), var(--main-color) 1px, var(--bg-color) 1px, var(--bg-color) 8px);
+				color: var(--main-color);
+				border: solid 1px var(--main-color);
+
+			}
+
+			#clueBox {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				background-color: var(--bg-color);
+				padding: 1rem;
+				border: solid 1px var(--main-color);
+				text-align: center;
+				color: var(--main-color);
+				border-radius: 6px;
+				min-width: 100%;
+				min-height: 160px;
+				max-height: fit-content;
+				overflow-y: scroll;
+			}
+
+
+			#mistake {
+				display: flex;
+				gap: .5rem;
+			}
+
+			.mistakeBox {
+				width: 3rem;
+				height: 3rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 6px;
+				background-color: var(--bg-color);
+				color: var(--main-color);
+				border: solid 1px var(--main-color);
+			}
+
+			#playGame {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				align-items: center;
+				gap: 1.5rem;
+				width: 100%;
+				height: 100%;
+				display: none;
+
+			}
+
+			#introGame {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				align-items: center;
+				gap: 1.5rem;
+				width: 100%;
+				height: 100%;
+
+			}
+
+			#instruction {
+				background-color: var(--bg-color);
+				padding: 1rem;
+				border-radius: 6px;
+				text-align: center;
+				color: var(--main-color);
+				border: solid 1px var(--main-color);
+			}
+
+
+			#chooseLevel {
+				display: flex;
+				flex-direction: column;
+				width: 70%;
+				gap: .5rem;
+			}
+
+			#chooseLevel>* {
+				background-color: var(--bg-color);
+				color: var(--main-color);
+				border: solid 1px var(--main-color);
+			}
+
+
+			:root {
+				background-color: var(--bg-color);
+				opacity: 1;
+				background-size: 30px 30px;
+			}
+
+			.fa-spinner {
+				font-size: 2.5rem;
+			}
+
+
+			#scoreboard {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				border: solid 1px var(--main-color);
+				padding: .5rem;
+				width: 50%;
+				color: var(--main-color);
+				border-radius: 6px;
+
+				h2 {
+					font-size: 1.5rem;
+					/* border: solid 1px red; */
+				}
+
+				h1 {
+					/* border: solid 1px red; */
+					font-size: 4rem;
+					padding: 0;
+					margin: 0;
+				}
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			@media screen and (min-width: 1000px) {
+
+				#instruction {
+					width: 40%;
+				}
+
+				#instruction>h2 {
+					font-size: 1.5rem;
+					color: var(--main-color);
+					font-weight: 700;
+				}
+
+				#instruction>p {
+					color: var(--main-color);
+					font-size: 1.5rem;
+				}
+
+				#playGame {
+					width: 80%;
+					font-size: 2rem;
+				}
+
+				li {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					text-align: center;
+					cursor: grab;
+					width: 3.5rem;
+					height: 3.5rem;
+					border-radius: 6px;
+					font-size: 3rem;
+					padding: 1rem;
+				}
+
+
+				#submitButton {
+					font-size: 1.5rem;
+					padding: 1rem;
+					width: 40%;
+				}
+
+				h1 {
+					font-size: 4rem;
+				}
+
+				#chooseLevel {
+					gap: 1rem;
+					width: max(30%, 500px);
+				}
+
+				#chooseLevel>* {
+					font-size: 2rem;
+				}
+
+				#sortable-list {
+					gap: .5rem;
+				}
+
+				#clueBox {
+					font-size: 1.5rem;
+					width: 60%;
+				}
+
+
+
+			}
